@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ChessBoard {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int n = 0;
         while (n == 0) {
@@ -12,7 +13,7 @@ public class ChessBoard {
             n = scanner.nextInt();
         }
 
-        for (int i = 0; i < n; i++) {
+            for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if ((i % 2 == 0) ^ (j % 2 == 0)) {
                     System.out.print("#");
@@ -23,5 +24,5 @@ public class ChessBoard {
             System.out.println();
         }
 
+        }
     }
-}
